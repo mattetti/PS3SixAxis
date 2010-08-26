@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6B158F011936FF50019E239 /* sixaxis.c in Sources */ = {isa = PBXBuildFile; fileRef = F6B158EE11936FF50019E239 /* sixaxis.c */; };
+		F6B158F111936FF50019E239 /* sixaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B158EF11936FF50019E239 /* sixaxis.h */; };
+		F6B15B02119415810019E239 /* ledGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B15B00119415810019E239 /* ledGreen.png */; };
+		F6B15B03119415810019E239 /* ledRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B15B01119415810019E239 /* ledRed.png */; };
+		F6B15B2711941D090019E239 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B15B2611941D090019E239 /* logo.png */; };
+		F6B15BB11198BB740019E239 /* SixAxisStick.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B15BB01198BB740019E239 /* SixAxisStick.m */; };
+		F6B15BD01198BEDA0019E239 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B15BCF1198BEDA0019E239 /* Quartz.framework */; };
+		F6E2F7801190C2A600F42F9B /* PS3SixAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E2F77E1190C2A600F42F9B /* PS3SixAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6E2F7811190C2A600F42F9B /* PS3SixAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E2F77F1190C2A600F42F9B /* PS3SixAxis.m */; };
+		F6E2F86A1190C61E00F42F9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F6E2F86B1190C61E00F42F9B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D614F90D4BBB870065F48D /* IOKit.framework */; };
+		F6E2F86C1190C61E00F42F9B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */; };
+		F6E2F8B61190CAA900F42F9B /* PS3SixAxisTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E2F8B51190CAA900F42F9B /* PS3SixAxisTest.m */; };
+		F6E2F8B81190CB3800F42F9B /* PS3SixAxisTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E2F8B71190CB3800F42F9B /* PS3SixAxisTest.xib */; };
+		F6E2F8BE1190CBB100F42F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E2F8BD1190CBB100F42F9B /* main.m */; };
+		F6E2F8E71190CF3B00F42F9B /* libPS3SixAxis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */; };
+		F6E2F8ED1190CF6300F42F9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F6E2F8EE1190CF6300F42F9B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D614F90D4BBB870065F48D /* IOKit.framework */; };
+		F6E2F8EF1190CF6300F42F9B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6E2F8D21190CD5E00F42F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E2F76D1190C12300F42F9B;
+			remoteInfo = PS3SixAxis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
+		97D614F90D4BBB870065F48D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		F6B158EE11936FF50019E239 /* sixaxis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sixaxis.c; path = PS3SixAxis/sixaxis.c; sourceTree = "<group>"; };
+		F6B158EF11936FF50019E239 /* sixaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sixaxis.h; path = PS3SixAxis/sixaxis.h; sourceTree = "<group>"; };
+		F6B15B00119415810019E239 /* ledGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ledGreen.png; path = PS3SixAxisTest/ledGreen.png; sourceTree = "<group>"; };
+		F6B15B01119415810019E239 /* ledRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ledRed.png; path = PS3SixAxisTest/ledRed.png; sourceTree = "<group>"; };
+		F6B15B2611941D090019E239 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = PS3SixAxisTest/logo.png; sourceTree = "<group>"; };
+		F6B15BAF1198BB740019E239 /* SixAxisStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SixAxisStick.h; path = PS3SixAxisTest/SixAxisStick.h; sourceTree = "<group>"; };
+		F6B15BB01198BB740019E239 /* SixAxisStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SixAxisStick.m; path = PS3SixAxisTest/SixAxisStick.m; sourceTree = "<group>"; };
+		F6B15BCF1198BEDA0019E239 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPS3SixAxis.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E2F77E1190C2A600F42F9B /* PS3SixAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PS3SixAxis.h; path = PS3SixAxis/PS3SixAxis.h; sourceTree = "<group>"; };
+		F6E2F77F1190C2A600F42F9B /* PS3SixAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PS3SixAxis.m; path = PS3SixAxis/PS3SixAxis.m; sourceTree = "<group>"; };
+		F6E2F8AB1190CA3E00F42F9B /* PS3SixAxisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PS3SixAxisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E2F8AD1190CA3E00F42F9B /* PS3SixAxisTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PS3SixAxisTest-Info.plist"; sourceTree = "<group>"; };
+		F6E2F8B41190CAA900F42F9B /* PS3SixAxisTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PS3SixAxisTest.h; path = PS3SixAxisTest/PS3SixAxisTest.h; sourceTree = "<group>"; };
+		F6E2F8B51190CAA900F42F9B /* PS3SixAxisTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PS3SixAxisTest.m; path = PS3SixAxisTest/PS3SixAxisTest.m; sourceTree = "<group>"; };
+		F6E2F8B71190CB3800F42F9B /* PS3SixAxisTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PS3SixAxisTest.xib; sourceTree = "<group>"; };
+		F6E2F8BD1190CBB100F42F9B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PS3SixAxisTest/main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E2F76C1190C12300F42F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F86A1190C61E00F42F9B /* Cocoa.framework in Frameworks */,
+				F6E2F86B1190C61E00F42F9B /* IOKit.framework in Frameworks */,
+				F6E2F86C1190C61E00F42F9B /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E2F8A91190CA3E00F42F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F8ED1190CF6300F42F9B /* Cocoa.framework in Frameworks */,
+				F6E2F8EE1190CF6300F42F9B /* IOKit.framework in Frameworks */,
+				F6E2F8EF1190CF6300F42F9B /* IOBluetooth.framework in Frameworks */,
+				F6E2F8E71190CF3B00F42F9B /* libPS3SixAxis.a in Frameworks */,
+				F6B15BD01198BEDA0019E239 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6B15BCF1198BEDA0019E239 /* Quartz.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */,
+				97D614F90D4BBB870065F48D /* IOKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */,
+				F6E2F8AB1190CA3E00F42F9B /* PS3SixAxisTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PS3_SixAxis */ = {
+			isa = PBXGroup;
+			children = (
+				F6E2F8B31190CA6000F42F9B /* PS3SixAxisTest */,
+				F6E2F7741190C15D00F42F9B /* PS3SixAxis */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PS3_SixAxis;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6B15B2611941D090019E239 /* logo.png */,
+				F6B15B00119415810019E239 /* ledGreen.png */,
+				F6B15B01119415810019E239 /* ledRed.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E2F7741190C15D00F42F9B /* PS3SixAxis */ = {
+			isa = PBXGroup;
+			children = (
+				F6B158EE11936FF50019E239 /* sixaxis.c */,
+				F6B158EF11936FF50019E239 /* sixaxis.h */,
+				F6E2F77E1190C2A600F42F9B /* PS3SixAxis.h */,
+				F6E2F77F1190C2A600F42F9B /* PS3SixAxis.m */,
+			);
+			name = PS3SixAxis;
+			sourceTree = "<group>";
+		};
+		F6E2F8B31190CA6000F42F9B /* PS3SixAxisTest */ = {
+			isa = PBXGroup;
+			children = (
+				F6E2F8AD1190CA3E00F42F9B /* PS3SixAxisTest-Info.plist */,
+				F6E2F8B71190CB3800F42F9B /* PS3SixAxisTest.xib */,
+				F6E2F8B41190CAA900F42F9B /* PS3SixAxisTest.h */,
+				F6E2F8B51190CAA900F42F9B /* PS3SixAxisTest.m */,
+				F6E2F8BD1190CBB100F42F9B /* main.m */,
+				F6B15BAF1198BB740019E239 /* SixAxisStick.h */,
+				F6B15BB01198BB740019E239 /* SixAxisStick.m */,
+			);
+			name = PS3SixAxisTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F6E2F76A1190C12300F42F9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F7801190C2A600F42F9B /* PS3SixAxis.h in Headers */,
+				F6B158F111936FF50019E239 /* sixaxis.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F6E2F76D1190C12300F42F9B /* PS3SixAxis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E2F7731190C13200F42F9B /* Build configuration list for PBXNativeTarget "PS3SixAxis" */;
+			buildPhases = (
+				F6E2F76A1190C12300F42F9B /* Headers */,
+				F6E2F76B1190C12300F42F9B /* Sources */,
+				F6E2F76C1190C12300F42F9B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PS3SixAxis;
+			productName = PS3SixAxis;
+			productReference = F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F6E2F8AA1190CA3E00F42F9B /* PS3SixAxisTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E2F8B01190CA3F00F42F9B /* Build configuration list for PBXNativeTarget "PS3SixAxisTest" */;
+			buildPhases = (
+				F6E2F8A71190CA3E00F42F9B /* Resources */,
+				F6E2F8A81190CA3E00F42F9B /* Sources */,
+				F6E2F8A91190CA3E00F42F9B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6E2F8D31190CD5E00F42F9B /* PBXTargetDependency */,
+			);
+			name = PS3SixAxisTest;
+			productName = PS3SixAxisTest;
+			productReference = F6E2F8AB1190CA3E00F42F9B /* PS3SixAxisTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PS3_SixAxis" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PS3_SixAxis */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E2F76D1190C12300F42F9B /* PS3SixAxis */,
+				F6E2F8AA1190CA3E00F42F9B /* PS3SixAxisTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6E2F8A71190CA3E00F42F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F8B81190CB3800F42F9B /* PS3SixAxisTest.xib in Resources */,
+				F6B15B02119415810019E239 /* ledGreen.png in Resources */,
+				F6B15B03119415810019E239 /* ledRed.png in Resources */,
+				F6B15B2711941D090019E239 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E2F76B1190C12300F42F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F7811190C2A600F42F9B /* PS3SixAxis.m in Sources */,
+				F6B158F011936FF50019E239 /* sixaxis.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E2F8A81190CA3E00F42F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E2F8B61190CAA900F42F9B /* PS3SixAxisTest.m in Sources */,
+				F6E2F8BE1190CBB100F42F9B /* main.m in Sources */,
+				F6B15BB11198BB740019E239 /* SixAxisStick.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6E2F8D31190CD5E00F42F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E2F76D1190C12300F42F9B /* PS3SixAxis */;
+			targetProxy = F6E2F8D21190CD5E00F42F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(value)",
+					"DEBUG=1",
+					"_NDEBUG=1",
+					"NDEBUG=1",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				OTHER_CFLAGS = (
+					"$(value)",
+					"-Wimplicit-function-declaration",
+				);
+				OTHER_CPLUSPLUSFLAGS = "";
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F6E2F76F1190C12300F42F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/HID Utilities\"",
+				);
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3SixAxis;
+			};
+			name = Debug;
+		};
+		F6E2F7701190C12300F42F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/HID Utilities\"",
+				);
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3SixAxis;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F6E2F8AE1190CA3F00F42F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PS3SixAxisTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3SixAxisTest;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PS3SixAxis\"";
+			};
+			name = Debug;
+		};
+		F6E2F8AF1190CA3F00F42F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "PS3SixAxisTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3SixAxisTest;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PS3SixAxis\"";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PS3_SixAxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E2F7731190C13200F42F9B /* Build configuration list for PBXNativeTarget "PS3SixAxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E2F76F1190C12300F42F9B /* Debug */,
+				F6E2F7701190C12300F42F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E2F8B01190CA3F00F42F9B /* Build configuration list for PBXNativeTarget "PS3SixAxisTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E2F8AE1190CA3F00F42F9B /* Debug */,
+				F6E2F8AF1190CA3F00F42F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
