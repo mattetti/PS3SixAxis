@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B84311A12642F04009EB107 /* sixaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B158EF11936FF50019E239 /* sixaxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B84311B12642F09009EB107 /* PS3SixAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E2F77E1190C2A600F42F9B /* PS3SixAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B84314512642F27009EB107 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */; };
+		2B84316412642F31009EB107 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D614F90D4BBB870065F48D /* IOKit.framework */; };
+		2B8431EA12642F35009EB107 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		2B84321812643060009EB107 /* PS3SixAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E2F77F1190C2A600F42F9B /* PS3SixAxis.m */; };
+		2B84321C126430E6009EB107 /* SixAxisStick.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B15BB01198BB740019E239 /* SixAxisStick.m */; };
+		2B843221126431A5009EB107 /* libPS3SixAxis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */; };
+		2B84328712643204009EB107 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B15BCF1198BEDA0019E239 /* Quartz.framework */; };
+		2B84328B12643249009EB107 /* SixAxisStick.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B15BAF1198BB740019E239 /* SixAxisStick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6B158F011936FF50019E239 /* sixaxis.c in Sources */ = {isa = PBXBuildFile; fileRef = F6B158EE11936FF50019E239 /* sixaxis.c */; };
 		F6B158F111936FF50019E239 /* sixaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B158EF11936FF50019E239 /* sixaxis.h */; };
 		F6B15B02119415810019E239 /* ledGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B15B00119415810019E239 /* ledGreen.png */; };
@@ -29,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2B84321A126430D7009EB107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E2F76D1190C12300F42F9B /* PS3SixAxis */;
+			remoteInfo = PS3SixAxis;
+		};
 		F6E2F8D21190CD5E00F42F9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -43,6 +60,8 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2B84311512642EEE009EB107 /* PS3Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PS3Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B84311612642EEE009EB107 /* PS3Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PS3Controller-Info.plist"; sourceTree = "<group>"; };
 		970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
 		97D614F90D4BBB870065F48D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		F6B158EE11936FF50019E239 /* sixaxis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sixaxis.c; path = PS3SixAxis/sixaxis.c; sourceTree = "<group>"; };
@@ -65,6 +84,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B84311312642EEE009EB107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B84328712643204009EB107 /* Quartz.framework in Frameworks */,
+				2B843221126431A5009EB107 /* libPS3SixAxis.a in Frameworks */,
+				2B8431EA12642F35009EB107 /* Cocoa.framework in Frameworks */,
+				2B84316412642F31009EB107 /* IOKit.framework in Frameworks */,
+				2B84314512642F27009EB107 /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E2F76C1190C12300F42F9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,6 +147,7 @@
 			children = (
 				F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */,
 				F6E2F8AB1190CA3E00F42F9B /* PS3SixAxisTest.app */,
+				2B84311512642EEE009EB107 /* PS3Controller.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +160,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2B84311612642EEE009EB107 /* PS3Controller-Info.plist */,
 			);
 			name = PS3_SixAxis;
 			sourceTree = "<group>";
@@ -179,6 +212,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2B84311012642EEE009EB107 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B84311B12642F09009EB107 /* PS3SixAxis.h in Headers */,
+				2B84311A12642F04009EB107 /* sixaxis.h in Headers */,
+				2B84328B12643249009EB107 /* SixAxisStick.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E2F76A1190C12300F42F9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +234,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2B84311412642EEE009EB107 /* PS3Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B84311912642EEE009EB107 /* Build configuration list for PBXNativeTarget "PS3Controller" */;
+			buildPhases = (
+				2B84311012642EEE009EB107 /* Headers */,
+				2B84311112642EEE009EB107 /* Resources */,
+				2B84311212642EEE009EB107 /* Sources */,
+				2B84311312642EEE009EB107 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B84321B126430D7009EB107 /* PBXTargetDependency */,
+			);
+			name = PS3Controller;
+			productName = PS3Controller;
+			productReference = 2B84311512642EEE009EB107 /* PS3Controller.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F6E2F76D1190C12300F42F9B /* PS3SixAxis */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E2F7731190C13200F42F9B /* Build configuration list for PBXNativeTarget "PS3SixAxis" */;
@@ -240,11 +302,19 @@
 			targets = (
 				F6E2F76D1190C12300F42F9B /* PS3SixAxis */,
 				F6E2F8AA1190CA3E00F42F9B /* PS3SixAxisTest */,
+				2B84311412642EEE009EB107 /* PS3Controller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B84311112642EEE009EB107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E2F8A71190CA3E00F42F9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +329,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B84311212642EEE009EB107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B84321C126430E6009EB107 /* SixAxisStick.m in Sources */,
+				2B84321812643060009EB107 /* PS3SixAxis.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E2F76B1190C12300F42F9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2B84321B126430D7009EB107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E2F76D1190C12300F42F9B /* PS3SixAxis */;
+			targetProxy = 2B84321A126430D7009EB107 /* PBXContainerItemProxy */;
+		};
 		F6E2F8D31190CD5E00F42F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F6E2F76D1190C12300F42F9B /* PS3SixAxis */;
@@ -289,6 +373,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2B84311712642EEE009EB107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PS3Controller-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3Controller;
+			};
+			name = Debug;
+		};
+		2B84311812642EEE009EB107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PS3Controller-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PS3Controller;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +582,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B84311912642EEE009EB107 /* Build configuration list for PBXNativeTarget "PS3Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B84311712642EEE009EB107 /* Debug */,
+				2B84311812642EEE009EB107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PS3_SixAxis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
