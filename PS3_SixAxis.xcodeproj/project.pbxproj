@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B84311A12642F04009EB107 /* sixaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B158EF11936FF50019E239 /* sixaxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B84311B12642F09009EB107 /* PS3SixAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E2F77E1190C2A600F42F9B /* PS3SixAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B84314512642F27009EB107 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F237E0EFC6DAB006C6E69 /* IOBluetooth.framework */; };
 		2B84316412642F31009EB107 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D614F90D4BBB870065F48D /* IOKit.framework */; };
 		2B8431EA12642F35009EB107 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		2B84321812643060009EB107 /* PS3SixAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E2F77F1190C2A600F42F9B /* PS3SixAxis.m */; };
-		2B84321C126430E6009EB107 /* SixAxisStick.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B15BB01198BB740019E239 /* SixAxisStick.m */; };
 		2B843221126431A5009EB107 /* libPS3SixAxis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E2F76E1190C12300F42F9B /* libPS3SixAxis.a */; };
-		2B84328712643204009EB107 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B15BCF1198BEDA0019E239 /* Quartz.framework */; };
-		2B84328B12643249009EB107 /* SixAxisStick.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B15BAF1198BB740019E239 /* SixAxisStick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6B158F011936FF50019E239 /* sixaxis.c in Sources */ = {isa = PBXBuildFile; fileRef = F6B158EE11936FF50019E239 /* sixaxis.c */; };
 		F6B158F111936FF50019E239 /* sixaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B158EF11936FF50019E239 /* sixaxis.h */; };
 		F6B15B02119415810019E239 /* ledGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B15B00119415810019E239 /* ledGreen.png */; };
@@ -88,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B84328712643204009EB107 /* Quartz.framework in Frameworks */,
 				2B843221126431A5009EB107 /* libPS3SixAxis.a in Frameworks */,
 				2B8431EA12642F35009EB107 /* Cocoa.framework in Frameworks */,
 				2B84316412642F31009EB107 /* IOKit.framework in Frameworks */,
@@ -217,8 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B84311B12642F09009EB107 /* PS3SixAxis.h in Headers */,
-				2B84311A12642F04009EB107 /* sixaxis.h in Headers */,
-				2B84328B12643249009EB107 /* SixAxisStick.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B84321C126430E6009EB107 /* SixAxisStick.m in Sources */,
 				2B84321812643060009EB107 /* PS3SixAxis.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +401,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "PS3Controller-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -424,6 +419,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = PS3Controller;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				STRIP_INSTALLED_PRODUCT = YES;
 				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = NO;
 			};
@@ -522,6 +518,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				HEADER_SEARCH_PATHS = (
