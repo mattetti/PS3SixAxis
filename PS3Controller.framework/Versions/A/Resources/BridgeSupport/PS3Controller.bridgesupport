@@ -1,0 +1,158 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOBluetooth.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<struct name='sixaxis_accelerometer' type='{sixaxis_accelerometer=&quot;x&quot;i&quot;y&quot;i&quot;z&quot;i&quot;gyro&quot;i}'/>
+<struct name='sixaxis_assemble_t' type='{sixaxis_assemble_t=&quot;type&quot;i&quot;report&quot;C&quot;func&quot;^?}'/>
+<struct name='sixaxis_axis' type='{sixaxis_axis=&quot;x&quot;i&quot;y&quot;i}'/>
+<struct name='sixaxis_button' type='{sixaxis_button=&quot;pressed&quot;B&quot;value&quot;C}'/>
+<struct name='sixaxis_process_t' type='{sixaxis_process_t=&quot;type&quot;i&quot;report&quot;C&quot;func&quot;^?}'/>
+<struct name='sixaxis_state' type='{sixaxis_state=&quot;sys&quot;{sixaxis_state_sys=&quot;reporting_enabled&quot;i&quot;feature_ef_byte_6&quot;i&quot;led&quot;[5i]&quot;rumble&quot;[2C]}&quot;user&quot;{sixaxis_state_user=&quot;button&quot;[17{sixaxis_button=&quot;pressed&quot;B&quot;value&quot;C}]&quot;axis&quot;[2{sixaxis_axis=&quot;x&quot;i&quot;y&quot;i}]&quot;accel&quot;{sixaxis_accelerometer=&quot;x&quot;i&quot;y&quot;i&quot;z&quot;i&quot;gyro&quot;i}}}'/>
+<struct name='sixaxis_state_sys' type='{sixaxis_state_sys=&quot;reporting_enabled&quot;i&quot;feature_ef_byte_6&quot;i&quot;led&quot;[5i]&quot;rumble&quot;[2C]}'/>
+<struct name='sixaxis_state_user' type='{sixaxis_state_user=&quot;button&quot;[17{sixaxis_button=&quot;pressed&quot;B&quot;value&quot;C}]&quot;axis&quot;[2{sixaxis_axis=&quot;x&quot;i&quot;y&quot;i}]&quot;accel&quot;{sixaxis_accelerometer=&quot;x&quot;i&quot;y&quot;i&quot;z&quot;i&quot;gyro&quot;i}}'/>
+<constant name='sixaxis_assemble' type='^{sixaxis_assemble_t=iC^?}'/>
+<constant name='sixaxis_process' type='^{sixaxis_process_t=iC^?}'/>
+<enum name='HID_DATA' value='10'/>
+<enum name='HID_GET_REPORT' value='4'/>
+<enum name='HID_HANDSHAKE' value='0'/>
+<enum name='HID_SET_REPORT' value='5'/>
+<enum name='HID_TYPE_FEATURE' value='3'/>
+<enum name='HID_TYPE_INPUT' value='1'/>
+<enum name='HID_TYPE_OUTPUT' value='2'/>
+<enum name='HID_TYPE_RESERVED' value='0'/>
+<enum name='LED_FLASH' value='1'/>
+<enum name='LED_OFF' value='0'/>
+<enum name='LED_ON' value='2'/>
+<enum name='SB_MAX' value='17'/>
+<enum name='sb_circle' value='8'/>
+<enum name='sb_cross' value='9'/>
+<enum name='sb_down' value='5'/>
+<enum name='sb_l1' value='11'/>
+<enum name='sb_l2' value='13'/>
+<enum name='sb_l3' value='15'/>
+<enum name='sb_left' value='6'/>
+<enum name='sb_ps' value='2'/>
+<enum name='sb_r1' value='12'/>
+<enum name='sb_r2' value='14'/>
+<enum name='sb_r3' value='16'/>
+<enum name='sb_right' value='4'/>
+<enum name='sb_select' value='0'/>
+<enum name='sb_square' value='10'/>
+<enum name='sb_start' value='1'/>
+<enum name='sb_triangle' value='7'/>
+<enum name='sb_up' value='3'/>
+<function name='sixaxis_init'>
+<arg type='^{sixaxis_state={sixaxis_state_sys=ii[5i][2C]}{sixaxis_state_user=[17{sixaxis_button=BC}][2{sixaxis_axis=ii}]{sixaxis_accelerometer=iiii}}}'/>
+</function>
+<function name='sixaxis_periodic_report'>
+<arg type='^{sixaxis_state={sixaxis_state_sys=ii[5i][2C]}{sixaxis_state_user=[17{sixaxis_button=BC}][2{sixaxis_axis=ii}]{sixaxis_accelerometer=iiii}}}'/>
+<retval type='i'/>
+</function>
+<class name='NSObject'>
+<method selector='onCircleButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onCrossButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onEastButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onL1Button:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onL2Button:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onLeftStick:pressed:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='onNorthButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onPSButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onR1Button:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onR2Button:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onRightStick:pressed:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='onSelectButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onSouthButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onSquareButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onStartButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onTriangleButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='onWestButton:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='PS3SixAxis'>
+<method selector='connect:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUseBuffered:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='useBuffered'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SixAxisStick'>
+<method selector='setJoyStickX:Y:pressed:'>
+<arg type='B' index='2'/>
+</method>
+</class>
+<informal_protocol name='NSObject'>
+<method type='v20@0:4i8i12i16' selector='onAxisX:Y:Z:'/>
+<method type='v12@0:4B8' selector='onCircleButton:'/>
+<method type='v12@0:4i8' selector='onCircleButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onCrossButton:'/>
+<method type='v12@0:4i8' selector='onCrossButtonWithPressure:'/>
+<method type='v8@0:4' selector='onDeviceConnected'/>
+<method type='v12@0:4i8' selector='onDeviceConnectionError:'/>
+<method type='v8@0:4' selector='onDeviceDisconnected'/>
+<method type='v12@0:4B8' selector='onEastButton:'/>
+<method type='v12@0:4i8' selector='onEastButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onL1Button:'/>
+<method type='v12@0:4i8' selector='onL1ButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onL2Button:'/>
+<method type='v12@0:4i8' selector='onL2ButtonWithPressure:'/>
+<method type='v20@0:48B16' selector='onLeftStick:pressed:'/>
+<method type='v12@0:4B8' selector='onNorthButton:'/>
+<method type='v12@0:4i8' selector='onNorthButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onPSButton:'/>
+<method type='v12@0:4B8' selector='onR1Button:'/>
+<method type='v12@0:4i8' selector='onR1ButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onR2Button:'/>
+<method type='v12@0:4i8' selector='onR2ButtonWithPressure:'/>
+<method type='v20@0:4{_NSPoint=ff}8B16' selector='onRightStick:pressed:'/>
+<method type='v12@0:4B8' selector='onSelectButton:'/>
+<method type='v12@0:4B8' selector='onSouthButton:'/>
+<method type='v12@0:4i8' selector='onSouthButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onSquareButton:'/>
+<method type='v12@0:4i8' selector='onSquareButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onStartButton:'/>
+<method type='v12@0:4B8' selector='onTriangleButton:'/>
+<method type='v12@0:4i8' selector='onTriangleButtonWithPressure:'/>
+<method type='v12@0:4B8' selector='onWestButton:'/>
+<method type='v12@0:4i8' selector='onWestButtonWithPressure:'/>
+</informal_protocol>
+</signatures>
