@@ -70,38 +70,38 @@
 </method>
 </class>
 <informal_protocol name='NSObject'>
-<method type='v20@0:4i8i12i16' selector='onAxisX:Y:Z:'/>
-<method type='v12@0:4B8' selector='onCircleButton:'/>
-<method type='v12@0:4i8' selector='onCircleButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onCrossButton:'/>
-<method type='v12@0:4i8' selector='onCrossButtonWithPressure:'/>
-<method type='v8@0:4' selector='onDeviceConnected'/>
-<method type='v12@0:4i8' selector='onDeviceConnectionError:'/>
-<method type='v8@0:4' selector='onDeviceDisconnected'/>
-<method type='v12@0:4B8' selector='onEastButton:'/>
-<method type='v12@0:4i8' selector='onEastButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onL1Button:'/>
-<method type='v12@0:4i8' selector='onL1ButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onL2Button:'/>
-<method type='v12@0:4i8' selector='onL2ButtonWithPressure:'/>
-<method type='v20@0:4{_NSPoint=ff}8B16' selector='onLeftStick:pressed:'/>
-<method type='v12@0:4B8' selector='onNorthButton:'/>
-<method type='v12@0:4i8' selector='onNorthButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onPSButton:'/>
-<method type='v12@0:4B8' selector='onR1Button:'/>
-<method type='v12@0:4i8' selector='onR1ButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onR2Button:'/>
-<method type='v12@0:4i8' selector='onR2ButtonWithPressure:'/>
-<method type='v20@0:4{_NSPoint=ff}8B16' selector='onRightStick:pressed:'/>
-<method type='v12@0:4B8' selector='onSelectButton:'/>
-<method type='v12@0:4B8' selector='onSouthButton:'/>
-<method type='v12@0:4i8' selector='onSouthButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onSquareButton:'/>
-<method type='v12@0:4i8' selector='onSquareButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onStartButton:'/>
-<method type='v12@0:4B8' selector='onTriangleButton:'/>
-<method type='v12@0:4i8' selector='onTriangleButtonWithPressure:'/>
-<method type='v12@0:4B8' selector='onWestButton:'/>
-<method type='v12@0:4i8' selector='onWestButtonWithPressure:'/>
+<method type64='v40@0:8q16q24q32' type='v20@0:4i8i12i16' selector='onAxisX:Y:Z:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onCircleButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onCircleButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onCrossButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onCrossButtonWithPressure:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='onDeviceConnected'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onDeviceConnectionError:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='onDeviceDisconnected'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onEastButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onEastButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onL1Button:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onL1ButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onL2Button:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onL2ButtonWithPressure:'/>
+<method type64='v36@0:8{CGPoint=dd}16B32' type='v20@0:4{_NSPoint=ff}8B16' selector='onLeftStick:pressed:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onNorthButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onNorthButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onPSButton:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onR1Button:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onR1ButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onR2Button:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onR2ButtonWithPressure:'/>
+<method type64='v36@0:8{CGPoint=dd}16B32' type='v20@0:4{_NSPoint=ff}8B16' selector='onRightStick:pressed:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onSelectButton:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onSouthButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onSouthButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onSquareButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onSquareButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onStartButton:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onTriangleButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onTriangleButtonWithPressure:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='onWestButton:'/>
+<method type64='v24@0:8q16' type='v12@0:4i8' selector='onWestButtonWithPressure:'/>
 </informal_protocol>
 </signatures>
