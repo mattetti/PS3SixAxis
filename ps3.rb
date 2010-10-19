@@ -125,12 +125,22 @@ class ControllerDelegate
 
 end
 
+# class Animal
+#   attr_accessor :name, :age
+#   def initialize(name=nil, age=nil)
+#     @name = name || 'rex'
+#     @age = age || 1
+#   end
+#   
+#   def isSelectorExcludedFromWebScript(sel); false end
+# end
 
 class Browser
   
   attr_accessor :view, :js_engine, :controller
   
   def initialize(controller)
+    @animal = Animal.new
     @controller = controller
     @view       = WebView.alloc.initWithFrame([0, 0, 520, 520])
     @window     = NSWindow.alloc.initWithContentRect([200, 200, 520, 520],
@@ -168,16 +178,17 @@ class Browser
     @js_engine = view.windowScriptObject # windowScriptObject
     @controller.js = @js_engine
     
+    @js_engine.setValue(@animal, forKey: "animal")
     # callWebScriptMethod:withArguments:
     # setValue:turtleView forKey:@"turtle"];
   end
 
   def webView(view, didFailLoadWithError:error, forFrame:frame)
-    puts "Failed to take snapshot: #{error.localizedDescription}"
+    puts "Failed: #{error.localizedDescription}"
   end
 
   def webView(view, didFailProvisionalLoadWithError:error, forFrame:frame)
-    puts "Failed to take snapshot: #{error.localizedDescription}"
+    puts "Failed: #{error.localizedDescription}"
   end
   
 end

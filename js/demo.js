@@ -5,6 +5,9 @@ window.onload = function() {
   rightJoystickWidth = $('#joystick-right').width();
   rightJoystickHeight = $('#joystick-right').height();
   
+  // bg = Raphael('background', 500, 500)
+  // bg.image("playstation-logo.jpg", 10, 10, 520, 120);
+  
   paper = Raphael("canvas_container", 500, 250);
   jPaper = Raphael("joystick-left", leftJoystickWidth, leftJoystickHeight);
   rPaper = Raphael("joystick-right", rightJoystickWidth, rightJoystickHeight);

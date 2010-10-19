@@ -5,7 +5,14 @@
         <script type="text/javascript" src="js/raphael.js"></script>  
         <script type="text/javascript" src="js/demo.js"></script>
         <style type="text/css">  
+            #background { 
+              background-image: url(logo.jpg);
+              background-repeat: no-repeat;
+              background-position: left center;
+              opacity: 0.4;
+            }
             #canvas_container {  
+                clear: both;
                 width: 500px;  
                 border: 1px solid #aaa;  
             }
@@ -40,13 +47,15 @@
             }
         </style>  
     </head>  
-    <body>  
-        <div id="canvas_container"></div>
-        <div id='joysticks'>
-          <div id="joystick-left"></div>
-          <div id="joystick-right"></div>
+    <body> 
+        <div id='background'>
+          <div id="canvas_container"></div>
+          <div id='joysticks'>
+            <div id="joystick-left"></div>
+            <div id="joystick-right"></div>
+          </div>
+          <div id="debug"></div>
+          <div id="orientation"></div>
         </div>
-        <div id="debug"></div>
-        <div id="orientation"></div>
     </body>  
 </html>
