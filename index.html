@@ -1,0 +1,52 @@
+<html>  
+    <head>  
+        <title>MacRuby Demo</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/raphael.js"></script>  
+        <script type="text/javascript" src="js/demo.js"></script>
+        <style type="text/css">  
+            #canvas_container {  
+                width: 500px;  
+                border: 1px solid #aaa;  
+            }
+            #joysticks{
+              width: 500px;
+            }
+            #joystick-left {
+                width: 150px;
+                float: left;
+                height: 150px;
+                border: 1px dotted #aaa;
+                margin: 10px 10px 10px 0px;
+            }
+            #joystick-right {
+                width: 150px;
+                float: right;
+                height: 150px;
+                border: 1px dotted #aaa;
+                margin: 10px 0px 10px 0px;
+            }
+            #debug{
+              clear: both;
+              width: 500px;
+              border: 1px solid #aaa;
+              height: 40px;
+            }
+            #orientation{
+              clear: both;
+              width: 500px;
+              border: 1px solid #aaa;
+              height: 40px;
+            }
+        </style>  
+    </head>  
+    <body>  
+        <div id="canvas_container"></div>
+        <div id='joysticks'>
+          <div id="joystick-left"></div>
+          <div id="joystick-right"></div>
+        </div>
+        <div id="debug"></div>
+        <div id="orientation"></div>
+    </body>  
+</html>
